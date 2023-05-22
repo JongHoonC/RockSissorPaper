@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>진짜 가위바위보</title>
+  </head>
+  <body>
+    <div class="questionArea">
+      <div id="inr_questionArea">
+        <div id="question"></div>
+      </div>
+      <h1>vs</h1>
+      <div id="choiceArea"></div>
+    </div>
+    <div class="textArea">
+      <div class="count">
+        <div id="number">
+          <span>현재 문제 번호 : </span>
+          <span id="thisNum">0</span>
+        </div>
+        <div class="winNum">
+          <span>승리한 횟수</span>
+          <span id="winNum">0</span>
+        </div>
+        <div class="defeatNum">
+          <span>패배한 횟수 : </span>
+          <span id="defeatNum">0</span>
+        </div>
+        <div class="sameNum">
+          <span>비긴 횟수 : </span>
+          <span id="sameNum">0</span>
+        </div>
+      </div>
+      <div class="clickBox">
+        <button onclick="goNext()" id="nextBtn">다음(NEXT)</button>
+        <button id="reBtn" onclick="reloadBtn()">다시하기</button>
+      </div>
+    </div>
+    <script src="./index2.js"></script>
+  </body>
+</html>

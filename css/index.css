@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+.questionArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1000px;
+  height: 700px;
+}
+#question {
+  text-align: center;
+}
+h1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#choiceArea {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+}
+.textArea {
+  width: 500px;
+}
+[type="radio"] {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+[type="radio"] + img {
+  cursor: pointer;
+}
+[type="radio"]:checked + img {
+  border-radius: 20px;
+  outline: 5px solid #ff0000;
+}
+.count > div {
+  display: flex;
+}
+.count > div > span {
+  display: block;
+  padding: 10px 10px 10px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+.clickBox {
+  display: flex;
+  flex-direction: column;
+  /* position: absolute; */
+  /* top: 500px; */
+  width: 200px;
+}
+#nextBtn {
+  position: absolute;
+  top: 400px;
+  width: 150px;
+  cursor: pointer;
+}
+#reBtn {
+  position: absolute;
+  top: 490px;
+  width: 150px;
+  cursor: pointer;
+}
+.clickBox > button {
+  margin: 20px 0;
+  padding: 20px 20px;
+  border: none;
+  background-color: rgb(57, 49, 49);
+  font-size: 20px;
+  font-weight: bold;
+  color: #eeeeee;
+}
